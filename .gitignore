@@ -1,0 +1,4 @@
+# Ignore 'dist' folder
+*dist/
+# Ignore '.cache' for now
+*.cache/
