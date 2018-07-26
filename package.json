@@ -4,6 +4,7 @@
   "description": "## Prerequisites * The desire to learn JavaScript at a deeper level * A love for coffee * A desire to improve your brewing skills",
   "main": "index.js",
   "scripts": {
+    "start": "parcel index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
