@@ -17,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/joshuamil/ydkcoffee/issues"
   },
-  "homepage": "https://github.com/joshuamil/ydkcoffee#readme"
+  "homepage": "https://github.com/joshuamil/ydkcoffee#readme",
+  "dependencies": {
+    "sass": "^1.10.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.2",
+    "posthtml-include": "^1.2.0"
+  }
 }

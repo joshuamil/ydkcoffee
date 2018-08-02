@@ -1,0 +1,8 @@
+@import 'colors';
+@import 'fonts';
+
+* {
+    background: $black;
+    font-family: $main-font;
+    color: $white;
+}
