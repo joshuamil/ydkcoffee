@@ -6,3 +6,17 @@
     font-family: $main-font;
     color: $white;
 }
+
+header {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+
+    > * {
+        border: 1px solid white;
+    }
+}
+
