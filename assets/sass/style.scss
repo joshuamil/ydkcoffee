@@ -1,0 +1,42 @@
+@import 'colors';
+@import 'fonts';
+@import 'nav';
+@import 'main';
+
+* {
+    background: $black;
+    font-family: $main-font;
+    color: $white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background: #3498db;
+
+    h1, h3 {
+        background: inherit;
+    }
+}
+
+main {
+    // display: flex;
+    // justify-content: space-evenly;
+    margin: 0;
+    background-image: url('../images/coffee.jpg');
+    min-height: 500px;
+
+    > * {
+        border: 1px solid white;
+    }
+}
+
+footer {
+    display: block;
+    background: #c0392b;
+
+    * {
+        background: inherit;
+    }
+}

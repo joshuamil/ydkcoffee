@@ -1,0 +1,27 @@
+{
+  "recipes": [
+    {
+      "type": "coffee",
+      "classification": "manual",
+      "name": "Aeropress",
+      "body": "This will be long-form text ...",
+      "steps": [
+        {"step": 1, "instruction": "Do something ..."},
+        {"step": 2, "instruction": "Do something else ..."}
+      ],
+      "instructions": "long form instructions ..."
+    },
+    
+    {
+      "type": "food",
+      "classification": "manual",
+      "name": "Toast",
+      "body": "This will be long-form text ...",
+      "steps": [
+        {"step": 1, "instruction": "Do something ..."},
+        {"step": 2, "instruction": "Do something else ..."}
+      ],
+      "instructions": "long form instructions ..."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "ydkcoffee",
+  "version": "1.0.0",
+  "description": "## Prerequisites * The desire to learn JavaScript at a deeper level * A love for coffee * A desire to improve your brewing skills",
+  "main": "./index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuamil/ydkcoffee.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshuamil/ydkcoffee/issues"
+  },
+  "homepage": "https://github.com/joshuamil/ydkcoffee#readme",
+  "dependencies": {
+    "sass": "^1.10.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.2",
+    "posthtml-include": "^1.2.0"
+  }
+}
