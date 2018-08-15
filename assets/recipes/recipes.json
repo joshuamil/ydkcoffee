@@ -6,8 +6,16 @@
       "name": "Aeropress",
       "body": "This will be long-form text ...",
       "steps": [
-        {"step": 1, "instruction": "Do something ..."},
-        {"step": 2, "instruction": "Do something else ..."}
+        {"step": 1, "instruction": "Bring at least 200 grams of water to a boil and let cool. As is almost always the case with coffee, optimal range is between 195 and 205 degrees."},
+        {"step": 2, "instruction": "Weigh 15-18 grams of coffee, depending on your preferred strength."},
+        {"step": 3, "instruction": "Grind coffee medium-fine. Think 'table salt', not coarse sea salt."},
+        {"step": 4, "instruction": "Insert plunger approximately 1/4 of the way into the Aeropress chamber and flip it so that the 'filter side' is up. Add your grounds and shake or tap the chamber slightly to level the grounds out."},
+        {"step": 5, "instruction": "Insert paper filter into Aeropress cap. Carefully add hot water from your kettle to rinse and wet the filter. Don't burn your fingers!"},
+        {"step": 6, "instruction": "Place Aeropress with grounds on your scale and tare the weight."},
+        {"step": 7, "instruction": "Our goal next is to add some water to saturate the grounds, and then let them rest. For the sake of ease, let's add 100 grams and agitate with our handy Aeropress stirrer."},
+        {"step": 8, "instruction": "Start a timer. Let the coffee rest for 30 seconds. Add another 100 grams of water, bringing our total weight to 200 grams. Let it rest again for 60 to 90 seconds."},
+        {"step": 9, "instruction": "Stir your coffee again, and secure the cap with the filter to the top. Then, in a gesture that will surely impress your friends and demonstrate your general aptitude as a potential mate, gracefully flip the Aeropress, filter-side down onto a cup or carafe and press the plunger down slowly. Don't force it, and stop when you hear a hissing sound (which means you're only forcing air at that point)."},
+        {"step": 10, "instruction": "Bask in the admiration of your coworkers and friends whilst enjoying your coffee and pretending it wasn't the first time you've done this. Use phrases like 'we have a different scale at my house' to throw them off the scent."}
       ],
       "instructions": "long form instructions ..."
     },
