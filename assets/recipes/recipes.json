@@ -4,7 +4,7 @@
       "type": "coffee",
       "classification": "manual",
       "name": "Aeropress",
-      "body": "This will be long-form text ...",
+      "body": "Do you want espresso, but can't afford a pricey Italian machine? Well this is... not it. But, while some say this is about as close as you can get to a comparable high-quality substitute, I believe it is its own unique beast altogether. Not only that, but it's one of the most forgiving brew methods out there. Give it a shot (no pun intended).",
       "steps": [
         {"step": 1, "instruction": "Bring at least 200 grams of water to a boil and let cool. As is almost always the case with coffee, optimal range is between 195 and 205 degrees."},
         {"step": 2, "instruction": "Weigh 15-18 grams of coffee, depending on your preferred strength."},
@@ -17,7 +17,7 @@
         {"step": 9, "instruction": "Stir your coffee again, and secure the cap with the filter to the top. Then, in a gesture that will surely impress your friends and demonstrate your general aptitude as a potential mate, gracefully flip the Aeropress, filter-side down onto a cup or carafe and press the plunger down slowly. Don't force it, and stop when you hear a hissing sound (which means you're only forcing air at that point)."},
         {"step": 10, "instruction": "Bask in the admiration of your coworkers and friends whilst enjoying your coffee and pretending it wasn't the first time you've done this. Use phrases like 'we have a different scale at my house' to throw them off the scent."}
       ],
-      "instructions": "long form instructions ..."
+      "instructions": "As always, we'll need a kettle with plenty of water, heated to 205 degrees, an Aeropress with stirrer and filter, and a scale. And a timer. We'll also need fresh ground coffee, of course. Oh, and a coffee cup, or possibly a carafe. Pretty much your entire coffee toolbox. Overall, our goal is to wet the grounds, agitate them, let them rest, top off the brew, stir again, and serve."
     },
     
     {
@@ -30,6 +30,26 @@
         {"step": 2, "instruction": "Do something else ..."}
       ],
       "instructions": "long form instructions ..."
+    },
+
+    {
+      "type": "coffee",
+      "classification": "manual",
+      "name": "Chemex",
+      "body": "If you're wondering what the difference is between this and a standard pourover, it's pretty much the same, except biggger, though much of the magic seems to be in the secret magic filters. Otherwise, the Chemex is simply a brilliant all-in-one brewing device that bundles the pourover device and the carafe into one unit and cranks out some of the smoothest coffee brew with amazing clarity. If you're not one of those people that can 'taste the notes' but aspire to be, this might be the method for you. Your grind will be a little more coarse than a typical V60 setup, but otherwise, the process will be very similar. Coffee is pretty subjective and there's a lot of room for experimentation, so use our recipe as a jumping-off point, and tweak to your taste. You should end up with around 25 ounces of coffee, so it's a great opportunity to make some lifelong friends, or possibly freeloaders.",
+      "steps:": [
+        {"step": 1, "instruction": "Grind 50 grams of your favorite coffee to a medium coarseness (think sea salt) and bring at least 700 grams of water to a boil."},
+        {"step": 2, "instruction": "Put your magic filter in the top portion of the Chemex. Bonus points for getting the fold in the spout without obstructing it; it's tricky, but ideal."},
+        {"step": 3, "instruction": "Wet the filter and discard the magic filter water. Studies show that hardly any of the magic is transferred to the water in this process, so don't fret about the wastefulness of it."},
+        {"step": 4, "instruction": "Add your grounds to the moistened filter, and give it a little tap or shake to even the grounds out."},
+        {"step": 5, "instruction": "Set a timer. Starting from the center of the bed of grounds, pour your water into the grounds, moving slowly outward in a spiral pattern. Avoid wetting the filter directly; remember, we're here for coffee, not magic paper water. Pour 100 grams of water in. This should take you roughly 45-55 seconds. Bask in the glory of the bloom."},
+        {"step": 6, "instruction": "Next, we'll be pouring in another 200 grams of water. Use the same fancy spiral pattern you used last time. Keep your eye on the grounds until there's about an inch of water left in the bottom before you proceed to the next step."},
+        {"step": 7, "instruction": "Basically, repeat the last step two more times."},
+        {"step": 8, "instruction": "Observe your brew time. Did it take about three-and-a-half to four-and-a-half minutes? If so, great! If not, what went wrong? Did you pour too fast? Was your grind too coarse or fine? Make a mental (or physical) note for future brews."},
+        {"step": 9, "instruction": "Allow the water to fully drip from the filter."},
+        {"step": 10, "instruction": "Serve. Fun fact, you are actually bound by federal law to enjoy. If you fail to fully enjoy your fresh Chemex brewed coffee, you may face fines or even jail time. Think of your loved ones!"}
+      ],
+      "instructions": "All the usual rules apply. Don't forget to warm some mugs!"
     }
   ]
 }
