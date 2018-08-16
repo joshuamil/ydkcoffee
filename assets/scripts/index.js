@@ -6,7 +6,7 @@ window.addEventListener('load', () => {
     console.log('hi everybody!');
     console.log(`Hi, Doctor Nick!`);
 
-    // This is our primary instance of the Class
+    // This is our primary instance of the Class    
     const recipe = new Recipe({
       "type": "coffee"
     });
