@@ -13,6 +13,11 @@ export default class Recipe {
       return i.type === keyword;
     });
   }
+
+  // pushToNav(method) {
+  //   console.log(method);
+  //   console.log(this.data);
+  // }
   
   retrieve(method) {
     console.log(method);
@@ -20,12 +25,11 @@ export default class Recipe {
     
     // Passed-in name from navigation text
     // should match the name="" property from the JSON file
-    console.log(this.data.name + '==' + method);
+    console.log(this.data[0].name + '==' + method);
+    this.data.forEach((r) => {
+      console.log(r.name);
+    })
 
-    /* this.data.name is nothing because we first have to drill
-    down into the array of recipes. Then we can compare 
-    this.data[i].name to method. First step is to figure out
-    the best way to do that.*/
     
     // Retrieve values from the recipe and write the values
     // into the main article tag inside of /assets/templates/main.html
@@ -35,6 +39,7 @@ export default class Recipe {
   
   update(method) {
     console.log(method);
+    
   }
   
 }
