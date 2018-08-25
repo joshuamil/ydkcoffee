@@ -20,14 +20,35 @@ export default class Recipe {
   // }
   
   retrieve(method) {
-    console.log(method);
-    console.log(this.data);
+    console.log(method); // the brew method we clicked on
+    console.log(this.data); // the array of recipes
+    let display = function(recipe){
+      console.log(recipe);
+      console.log(recipe.steps);
+      document.getElementById('name').textContent = recipe.name;
+      document.getElementById('desc').textContent = recipe.body;
+      // document.getElementById('inst').textContent = recipe.instructions;
+      let steps = document.getElementById('steps');
+      steps.innerHTML = "";
+      recipe.steps.forEach((step) => {
+        console.log(step.instruction);
+        let mark = document.createElement('li');
+        mark.textContent = step.instruction;
+        console.log(mark);
+        steps.appendChild(mark);
+
+      });
+      console.log(name);
+    }
     
     // Passed-in name from navigation text
     // should match the name="" property from the JSON file
-    console.log(this.data[0].name + '==' + method);
+    
+    // console.log(this.data[0].name + '==' + method);
     this.data.forEach((r) => {
       console.log(r.name);
+      // let checker = (r.name == method) ? console.log('true') : console.log('false');
+      (r.name == method) ? display(r) : console.log('nope');
     })
 
     
@@ -39,7 +60,7 @@ export default class Recipe {
   
   update(method) {
     console.log(method);
-    
+
   }
   
 }

@@ -1,14 +1,39 @@
 article {
-    display: inline-block;
-    margin-left: 20vw;
-    padding: 30px;
+    height: 100vh;
+    margin: 0 100px;
+    padding: 2vw;
+    flex: 1;
+    overflow-y: scroll;
+    background: $white;
+    color: $comp2;
+    opacity: .8;
+
+    * {
+        background: inherit;
+        color: inherit;
+    }
 
     h1 {
-        padding-bottom: 1.5vh;
+        color: $coffeetone;
+    }
+
+    h3 {
+        padding: 10px;
+        color: $comp2tone;
+    }
+
+    ol {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
     li {
-        list-style: none;
-        padding: .2vh;
+        padding: .7vh 1vh;
+        // line-height: 1.2em;
     }
+     p {
+         font-style: italic;
+         line-height: 1.2em;
+     }
 }
