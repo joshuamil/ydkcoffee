@@ -23,9 +23,9 @@ export default class Recipe {
     console.log(method); // the brew method we clicked on
     console.log(this.data); // the array of recipes
     let display = function(recipe){
-      console.log(recipe);
-      console.log(recipe.steps);
       document.getElementById('name').textContent = recipe.name;
+      // let body = JSON.stringify(recipe.body);
+      // console.log(body);
       document.getElementById('desc').textContent = recipe.body;
       // document.getElementById('inst').textContent = recipe.instructions;
       let steps = document.getElementById('steps');
@@ -34,7 +34,6 @@ export default class Recipe {
         console.log(step.instruction);
         let mark = document.createElement('li');
         mark.textContent = step.instruction;
-        console.log(mark);
         steps.appendChild(mark);
 
       });
