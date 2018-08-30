@@ -50,6 +50,44 @@
         {"step": 10, "instruction": "Serve. Fun fact, you are actually bound by federal law to enjoy. If you fail to fully enjoy your fresh Chemex brewed coffee, you may face fines or even jail time. Think of your loved ones!"}
       ],
       "instructions": "All the usual rules apply. Don't forget to warm some mugs!"
+    },
+    {
+      "type": "coffee",
+      "classification": "manual",
+      "name": "Hario V60",
+      "body": "The V60 is standard issue for almost all third-wave coffee shops today. It's known for giving a bright, clean cup. While perhaps the least forgiving of the drippers, it also affords the greatest flexibility; your grind, pour technique, and timing will all come into play. But what you get in return is greater granular control over your cup.",
+      "steps": [
+        {"step": 1, "instruction": "Bring about 500 grams of water to a boil and let cool. Ideal temperature is between 195 and 205 degrees."},
+        {"step": 2, "instruction": "Weigh 30 grams of coffee."},
+        {"step": 3, "instruction": "Place your V60 on your carafe and wet your filter. Discard this water."},
+        {"step": 4, "instruction": "Grind coffee medium-fine. Think of granulated 'table salt', not coarse sea salt."},
+        {"step": 5, "instruction": "Add your coffee to the pre-moistened dripper filter, and give it a little shake or tap to level the bed of grounds. With your carafe (or mug) and dripper on your scale, tare the weight."},
+        {"step": 6, "instruction": "Start a timer and begin your first pour. This will be in a circular motion in the center, working outward to saturate the grounds. Aim for around 50 grams of water. Some people like to stir the grounds at this point to ensure total saturation. Try it out a few times and see if you like it."},
+        {"step": 8, "instruction": "Give around 30 seconds to allow the 'bloom' to complete."},
+        {"step": 7, "instruction": "Rather than give specific instruction, our goal at this point will be to keep the dripper between 1/2 and 3/4 full. So pour enough water to get your level up to 3/4, and then add water to keep the level around there until you've poured 500 grams, total. This should take 3-4 minutes. Avoid pouring the edges of the grounds on the filter, but rather focus on raising the water level to meet the grounds."},
+        {"step": 9, "instruction": "While the brew finishes dripping, take some time for self-reflection. Did you hit the 3-4 minute mark? If not, why? Should you have poured faster or slower? Where did your parents go wrong?"},
+        {"step": 10, "instruction": "Serve. Your lizard overlords require it."}
+      ],
+      "instructions": "As always, we'll need a kettle with plenty of water, heated to 205 degrees, a Hario V60 and filter, and a scale. And a timer. We'll also need fresh ground coffee, of course. Oh, and a coffee cup, or possibly a carafe. The standard coffee toolkit."
+    },
+    {
+      "type": "coffee",
+      "classification": "manual",
+      "name": "French Press",
+      "body": "The great thing about a French press is that it's so forgiving. If done right, you'll almost assuredly walk away with a great cup of coffee, and the bar for 'right' is much lower than it is for most brew methods. This is not a subtle cup, you probably won't be using words like 'stone fruit' and 'good' (just kidding!), but instead, you'll get a quintessential, strong cup of coffee. This recipe will use a Bodom Chambord 8 cup, because that's what I have, but the ratio is about 2 grams of coffee per oz of water, so break out Google and a notepad to adjust.",
+      "steps": [
+        {"step": 1, "instruction": "As always, let's get some water up to around 205 degrees Fahrenheit. We'll need at least 900 grams and we want it good and boily."},
+        {"step": 2, "instruction": "We'll need 60 grams of freshly ground coffee, ground fairly coarse. We want our grounds too big to easily get through the filter. A little coarser than sea salt. Counter Culture says coarsely cracked pepper, which I find useless, but maybe it will help you."},
+        {"step": 3, "instruction": "We've got our water and we've got our coffee, we really don't need a scale at this point, but it's kind of tradition, right? Put your grounds straight in the carafe, and go ahead and tare it. As always, give it a tap or shake to level out the grounds."},
+        {"step": 4, "instruction": "Add water to about halfway up the carafe."},
+        {"step": 5, "instruction": "Give your coffee a big stir to ensure complete saturation and get that bloom a-goin'."},
+        {"step": 6, "instruction": "Top off your French press until you get to around the top 'bar' of the handle."},
+        {"step": 8, "instruction": "Set a timer for 4 minutes. Add the plunger assembly, but don't press yet; just turn the opening away from the spout to trap the heat, and push gently on the plunger until you get some light resistance and stop."},
+        {"step": 7, "instruction": "Wait out the timer. Occupy your mind by thinking about how cool you look making coffee. Does [insert person] from [insert department] like you? It's hard to know, so it's best to be cool about it. Also, have you called your mom lately?"},
+        {"step": 9, "instruction": "Time's up! It's time to take the plunge! By which I mean, push on the plunger. Gently. You're not forcing, you're guiding. When you hit the bottom, stop. We're not making an extract here."},
+        {"step": 10, "instruction": "Finally your hard work is paying off! No, it's not a raise, it's better than that: it's coffee! \r I probably should have led with that. I can see you're disappointed, now. Maybe you could make some friends to help ease the pain. Unless you want to be wired the rest of the day, which is a perfectly valid life choice and don't let anyone tell you otherwise. \r Oh, and pouring into a carafe isn't a bad idea if you can't drink it all at once. Otherwise, your coffee will continue to concentrate in the carafe."}
+      ],
+      "instructions": "As always, we'll need a kettle (gooseneck optional) with plenty of water, heated to 205 degrees, obviously a French press, a stirring implement of some sort (commonly known as a spoon), and a heart. A timer wouldn't hurt, either. We'll also need fresh ground coffee, of course. Oh, and like, 4 coffee cups, or a carafe."
     }
   ]
 }
