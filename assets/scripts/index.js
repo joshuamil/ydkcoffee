@@ -29,7 +29,10 @@ window.addEventListener('load', () => {
     //END BREWER STUFF
 
 
-    const recipes = [].slice.call(document.querySelectorAll('.recipes li'));
+    let recipes = [].slice.call(document.querySelectorAll('.recipes li'));
+    console.log(recipes);
+    //TODO: revisit this in the future:
+    recipes = document.querySelectorAll('.recipes li');
     console.log(recipes);
     
     recipes.forEach((rec) => {
