@@ -23,16 +23,17 @@ export default class Recipe {
     console.log(method); // the brew method we clicked on
     console.log(this.data); // the array of recipes
     let display = function(recipe){
-      document.getElementById('name').textContent = recipe.name;
+      document.querySelector('#name').textContent = recipe.name;
       // let body = JSON.stringify(recipe.body);
       // console.log(body);
-      document.getElementById('desc').textContent = recipe.body;
+      document.querySelector('#desc').textContent = recipe.body;
       // document.getElementById('inst').textContent = recipe.instructions;
-      let steps = document.getElementById('steps');
+      let steps = document.querySelector('#steps');
       steps.innerHTML = "";
+      let mark;
       recipe.steps.forEach((step) => {
         console.log(step.instruction);
-        let mark = document.createElement('li');
+        mark = document.createElement('li');
         mark.textContent = step.instruction;
         steps.appendChild(mark);
 
