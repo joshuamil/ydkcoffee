@@ -29,18 +29,16 @@ export default class Recipe {
       name/url pairs (if name == keyword, src: ${url})
       3. add the image here dynamically before progressing.
       */
-      const img = new Image({
-        "name": recipe.name,
-      })
-      console.log(`image is ${JSON.stringify(img)}`);
+      const img = new Image(recipe).renderImage();
+      document.querySelector('.image').innerHTML = img;
+      
       document.querySelector('#name').textContent = recipe.name;
       // let body = JSON.stringify(recipe.body);
       // console.log(body);
       document.querySelector('#desc').textContent = recipe.body;
       // document.getElementById('inst').textContent = recipe.instructions;
       let steps = document.querySelector('#steps');
-      steps.innerHTML = "";
-      let mark = [];
+      let mark = "";
       recipe.steps.forEach((step) => {
         mark += `<li>${step.instruction}</li>`;
       });
@@ -49,6 +47,7 @@ export default class Recipe {
       //Discuss security
       //Also, if mark is not init as an array, the first 
       // item is 'undefined' atop the <ol>. Why?
+      
     }
     
     // Passed-in name from navigation text
