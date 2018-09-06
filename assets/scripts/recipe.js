@@ -1,4 +1,5 @@
 import * as RecipeData from '../recipes/recipes.json';
+import Image from './image.js';
 
 export default class Recipe {
   
@@ -13,16 +14,22 @@ export default class Recipe {
       return i.type === keyword;
     });
   }
-
-  // pushToNav(method) {
-  //   console.log(method);
-  //   console.log(this.data);
-  // }
   
   retrieve(method) {
     console.log(method); // the brew method we clicked on
     console.log(this.data); // the array of recipes
     let display = function(recipe){
+      /*
+      1. add an 'image' class that creates and inits an
+      object with some preset properties (size, etc.),
+      2. dynamically append a src using an array of
+      name/url pairs (if name == keyword, src: ${url})
+      3. add the image here dynamically before progressing.
+      */
+      const img = new Image({
+        "name": recipe.name,
+      })
+      console.log(img);
       document.querySelector('#name').textContent = recipe.name;
       // let body = JSON.stringify(recipe.body);
       // console.log(body);
@@ -30,15 +37,15 @@ export default class Recipe {
       // document.getElementById('inst').textContent = recipe.instructions;
       let steps = document.querySelector('#steps');
       steps.innerHTML = "";
-      let mark;
+      let mark = [];
       recipe.steps.forEach((step) => {
-        console.log(step.instruction);
-        mark = document.createElement('li');
-        mark.textContent = step.instruction;
-        steps.appendChild(mark);
-
+        mark += `<li>${step.instruction}</li>`;
       });
-      console.log(name);
+      //Best practice?
+      steps.innerHTML = mark;
+      //Discuss security
+      //Also, if mark is not init as an array, the first 
+      // item is 'undefined' atop the <ol>. Why?
     }
     
     // Passed-in name from navigation text
