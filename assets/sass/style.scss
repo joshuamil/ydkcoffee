@@ -13,16 +13,17 @@
 
 header {
     text-align: center;
-    background: #3498db;
+    background: $comp2;
 
     h1, h3 {
         background: inherit;
+        color: $comp2tone;
     }
 }
 
 main {
-    // display: flex;
-    // justify-content: space-evenly;
+    display: flex;
+    justify-content: flex-start;
     margin: 0;
     background-image: url('../images/coffee.jpg');
     min-height: 500px;
@@ -34,7 +35,7 @@ main {
 
 footer {
     display: block;
-    background: #c0392b;
+    background: $comp1;
 
     * {
         background: inherit;

@@ -4,3 +4,5 @@
 *.cache/
 # Ignore 'node_modules'
 *node_modules/
+# Ignore brewers.js for now
+*brewers.js

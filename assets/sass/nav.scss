@@ -1,7 +1,10 @@
 nav {
     display: inline-block;
+    position: relative;
+    // left: -185px;
+    // top: -100px;
     padding: 2vw;
-    height: 100%;
+    height: 100vh;
 
   .recipes {
     li {
