@@ -8,9 +8,12 @@ export default class Recipe {
     
     // Retrieve our keyword from the classification object
     const keyword = this.properties.type;
+
+    let recs = [];
     
     // Filtering an array of JSON objects
     this.data = RecipeData.recipes.filter((i) => {
+      recs.push(i.name);
       return i.type === keyword;
     });
   }
@@ -29,7 +32,7 @@ export default class Recipe {
       const img = new Image({
         "name": recipe.name,
       })
-      console.log(img);
+      console.log(`image is ${JSON.stringify(img)}`);
       document.querySelector('#name').textContent = recipe.name;
       // let body = JSON.stringify(recipe.body);
       // console.log(body);
@@ -71,3 +74,5 @@ export default class Recipe {
   }
   
 }
+
+// export let recs;
