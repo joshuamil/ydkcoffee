@@ -1,7 +1,6 @@
 import '../sass/style.scss';
 
 import Recipe from './recipe.js';
-import Brewer from './brewers.js';
 
 window.addEventListener('load', () => {
     console.log('hi everybody!');
@@ -17,16 +16,6 @@ window.addEventListener('load', () => {
     const recipe2 = new Recipe({
       "type": "food"
     });
-
-    // This is extra info to work with for additional help
-    const brewer = new Brewer({
-        
-    });
-
-    const brewers = brewer.pour();
-
-    console.log(brewers);
-    //END BREWER STUFF
 
 
     let recipes = [].slice.call(document.querySelectorAll('.recipes li'));
