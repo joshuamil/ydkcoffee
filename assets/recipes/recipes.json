@@ -17,7 +17,8 @@
         {"step": 9, "instruction": "Stir your coffee again, and secure the cap with the filter to the top. Then, in a gesture that will surely impress your friends and demonstrate your general aptitude as a potential mate, gracefully flip the Aeropress, filter-side down onto a cup or carafe and press the plunger down slowly. Don't force it, and stop when you hear a hissing sound (which means you're only forcing air at that point)."},
         {"step": 10, "instruction": "Bask in the admiration of your coworkers and friends whilst enjoying your coffee and pretending it wasn't the first time you've done this. Use phrases like 'we have a different scale at my house' to throw them off the scent."}
       ],
-      "instructions": "As always, we'll need a kettle with plenty of water, heated to 205 degrees, an Aeropress with stirrer and filter, and a scale. And a timer. We'll also need fresh ground coffee, of course. Oh, and a coffee cup, or possibly a carafe. Pretty much your entire coffee toolbox. \r Overall, our goal is to wet the grounds, agitate them, let them rest, top off the brew, stir again, and serve."
+      "instructions": "As always, we'll need a kettle with plenty of water, heated to 205 degrees, an Aeropress with stirrer and filter, and a scale. And a timer. We'll also need fresh ground coffee, of course. Oh, and a coffee cup, or possibly a carafe. Pretty much your entire coffee toolbox. \r Overall, our goal is to wet the grounds, agitate them, let them rest, top off the brew, stir again, and serve.",
+      "img": "https://cdn.shopify.com/s/files/1/0513/0801/products/aeropress_grande.jpg?v=1402410656"
     },
     
     {
@@ -29,7 +30,8 @@
         {"step": 1, "instruction": "Do something ..."},
         {"step": 2, "instruction": "Do something else ..."}
       ],
-      "instructions": "long form instructions ..."
+      "instructions": "long form instructions ...",
+      "img": "http://www.slyhkitchen.com/wp-content/uploads/2015/09/Toast.jpg"
     },
 
     {
@@ -49,7 +51,8 @@
         {"step": 9, "instruction": "Allow the water to fully drip from the filter."},
         {"step": 10, "instruction": "Serve. Fun fact, you are actually bound by federal law to enjoy. If you fail to fully enjoy your fresh Chemex brewed coffee, you may face fines or even jail time. Think of your loved ones!"}
       ],
-      "instructions": "All the usual rules apply. Don't forget to warm some mugs!"
+      "instructions": "All the usual rules apply. Don't forget to warm some mugs!",
+      "img": "https://images.ctfassets.net/3h0qt25be5vd/5PvJBfq0EM208C4MmkcsQu/9940a19d6310f63dd9ff71649b590470/Brew_Guide-Chemex-Step05.jpg?w=960&h=640&fm=jpg&q=70"
     },
     {
       "type": "coffee",
@@ -68,7 +71,8 @@
         {"step": 9, "instruction": "While the brew finishes dripping, take some time for self-reflection. Did you hit the 3-4 minute mark? If not, why? Should you have poured faster or slower? Where did your parents go wrong?"},
         {"step": 10, "instruction": "Serve. Your lizard overlords require it."}
       ],
-      "instructions": "As always, we'll need a kettle with plenty of water, heated to 205 degrees, a Hario V60 and filter, and a scale. And a timer. We'll also need fresh ground coffee, of course. Oh, and a coffee cup, or possibly a carafe. The standard coffee toolkit."
+      "instructions": "As always, we'll need a kettle with plenty of water, heated to 205 degrees, a Hario V60 and filter, and a scale. And a timer. We'll also need fresh ground coffee, of course. Oh, and a coffee cup, or possibly a carafe. The standard coffee toolkit.",
+      "img": "https://static1.squarespace.com/static/56637d82e4b055b21a37d658/56751b8469492e8da7dd192b/56834ac49cadb697dd8dab14/1484372719913/?format=2500w"
     },
     {
       "type": "coffee",
@@ -87,7 +91,8 @@
         {"step": 9, "instruction": "Time's up! It's time to take the plunge! By which I mean, push on the plunger. Gently. You're not forcing, you're guiding. When you hit the bottom, stop. We're not making an extract here."},
         {"step": 10, "instruction": "Finally your hard work is paying off! No, it's not a raise, it's better than that: it's coffee! \r I probably should have led with that. I can see you're disappointed, now. Maybe you could make some friends to help ease the pain. Unless you want to be wired the rest of the day, which is a perfectly valid life choice and don't let anyone tell you otherwise. \r Oh, and pouring into a carafe isn't a bad idea if you can't drink it all at once. Otherwise, your coffee will continue to concentrate in the carafe."}
       ],
-      "instructions": "As always, we'll need a kettle (gooseneck optional) with plenty of water, heated to 205 degrees, obviously a French press, a stirring implement of some sort (commonly known as a spoon), and a heart. A timer wouldn't hurt, either. We'll also need fresh ground coffee, of course. Oh, and like, 4 coffee cups, or a carafe."
+      "instructions": "As always, we'll need a kettle (gooseneck optional) with plenty of water, heated to 205 degrees, obviously a French press, a stirring implement of some sort (commonly known as a spoon), and a heart. A timer wouldn't hurt, either. We'll also need fresh ground coffee, of course. Oh, and like, 4 coffee cups, or a carafe.",
+      "img": "https://www.littlecoffeeplace.com/wp-content/uploads/2015/12/Top-Rated-French-Presses.jpg"
     }
   ]
 }
