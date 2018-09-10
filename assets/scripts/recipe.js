@@ -21,6 +21,12 @@ export default class Recipe {
   retrieve(method) {
     console.log(method); // the brew method we clicked on
     console.log(this.data); // the array of recipes
+
+    fetch('http://localhost:1234/recipes.json', {credentials: "same-origin"})
+    .then((response) => response.json())
+    .then((response) => console.log(response))
+    // .then((myJson) => console.log(JSON.stringify(myJson)));
+
     let display = function(recipe){
       /*
       1. add an 'image' class that creates and inits an
