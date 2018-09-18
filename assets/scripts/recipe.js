@@ -1,5 +1,17 @@
-import * as RecipeData from '../recipes/recipes.json';
+// import * as RecipeData from '../recipes/recipes.json';
 import Image from './image.js';
+
+let RecipeData;
+
+fetch('http://localhost:1234/recipes.json', {credentials: "same-origin"})
+    //takes info and moves it forward with ever '.then'
+    //presumably this is why omitting line 11 breaks line 13
+    // .then((response) => console.log(`A: ${response}`))
+    .then((response) => response.json())
+    // .then((myJson) => console.log(`strungified: ${JSON.stringify(myJson)}`))
+    // .then((response) => console.log(`B: ${response}`))
+    .then((response) => RecipeData = response);
+    // .then((myJson) => console.log(JSON.stringify(myJson)));
 
 export default class Recipe {
   
@@ -37,6 +49,7 @@ export default class Recipe {
       */
       const img = new Image(recipe).renderImage();
       document.querySelector('.image').innerHTML = img;
+      document.querySelector('title').innerHTML = recipe.name;
       
       document.querySelector('#name').textContent = recipe.name;
       // let body = JSON.stringify(recipe.body);

@@ -26,7 +26,9 @@ main {
     justify-content: flex-start;
     margin: 0;
     background-image: url('../images/coffee.jpg');
+    background-size: contain;
     min-height: 500px;
+    max-height: 800vh;
 
     > * {
         border: 1px solid white;

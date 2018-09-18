@@ -6,7 +6,7 @@ article {
     overflow-y: scroll;
     background: $white;
     color: $comp2;
-    opacity: .8;
+    opacity: .95;
 
     * {
         background: inherit;
@@ -35,5 +35,11 @@ article {
      p {
          font-style: italic;
          line-height: 1.2em;
+     }
+
+     .image {
+         img {
+            max-width: 100%;
+         }
      }
 }
