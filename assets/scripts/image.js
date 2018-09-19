@@ -25,8 +25,13 @@ export default class Image {
     // let splitText = altText.split(['/', '.']);
     let splitText = altText.split('/');
     console.log(splitText);
-    splitText.filter(section => section.includes('.jpg' || '.png'));
-    // console.log(`image text: ${altText.replace(regex,'')}`);
+    let chunk = splitText.filter(section => section.includes('.'));
+    console.log(chunk);
+    chunk.shift();
+    console.log(chunk);
+    // Next, take the remaining string and remove everything after '.' //RegExp?
+    // Then remove any characters and capitalize. (toUpperCase()?)
+    // console.log(`image text: ${splitText.replace(regex,'')}`);
     return altText;
   }
   
