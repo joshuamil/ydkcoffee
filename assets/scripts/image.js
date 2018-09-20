@@ -21,18 +21,25 @@ export default class Image {
   
   defAltText() {
     const altText = this.recipe.img;
-    let regex = /[0-9]+/gm;
+    let stripExt = /\.[\w\W]+/gm;
+    let stripOpen = /\["/;
+    let remus = /_/;
     // let splitText = altText.split(['/', '.']);
     let splitText = altText.split('/');
     console.log(splitText);
     let chunk = splitText.filter(section => section.includes('.'));
     console.log(chunk);
     chunk.shift();
-    console.log(chunk);
-    // Next, take the remaining string and remove everything after '.' //RegExp?
-    // Then remove any characters and capitalize. (toUpperCase()?)
+    chunk = JSON.stringify(chunk);
+    let str = chunk.replace(stripExt, '');
+    str = str.replace('["', '');
+    str = str.replace("_", ' ');
+    // str = `${str[0].toUpperCase()}`;
+    // str.shift();
+    console.log(str);
+    // Need to use regex to remove any symbols
     // console.log(`image text: ${splitText.replace(regex,'')}`);
-    return altText;
+    return str;
   }
   
 }
