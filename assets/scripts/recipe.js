@@ -3,7 +3,9 @@ import Image from './image.js';
 
 let RecipeData;
 
-fetch('http://localhost:1234/recipes.json', {credentials: "same-origin"})
+let kittens = () => console.log('omg, kittens!');
+
+let sandwich = fetch('http://localhost:1234/recipes.json', {credentials: "same-origin"})
     //takes info and moves it forward with ever '.then'
     //presumably this is why omitting line 11 breaks line 13
     // .then((response) => console.log(`A: ${response}`))
@@ -12,6 +14,8 @@ fetch('http://localhost:1234/recipes.json', {credentials: "same-origin"})
     // .then((response) => console.log(`B: ${response}`))
     .then((response) => RecipeData = response);
     // .then((myJson) => console.log(JSON.stringify(myJson)));
+
+    Promise.all([sandwich, kittens]).then(()=> console.log('meatballs!'));
 
 export default class Recipe {
   
