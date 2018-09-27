@@ -3,47 +3,43 @@ import Image from './image.js';
 
 let RecipeData;
 
-let kittens = () => console.log('omg, kittens!');
+export default class Recipe {
 
-let sandwich = fetch('http://localhost:1234/recipes.json', {credentials: "same-origin"})
-    //takes info and moves it forward with ever '.then'
-    //presumably this is why omitting line 11 breaks line 13
-    // .then((response) => console.log(`A: ${response}`))
-    .then((response) => response.json())
-    // .then((myJson) => console.log(`strungified: ${JSON.stringify(myJson)}`))
-    // .then((response) => console.log(`B: ${response}`))
-    .then((response) => RecipeData = response);
+  constructor(properties) {
+    let kittens = () => console.log('omg, kittens!');
+
+    let sandwich = fetch('http://localhost:1234/recipes.json', { credentials: "same-origin" })
+      .then((response) => response.json())
+      .then((response) => RecipeData = response);
     // .then((myJson) => console.log(JSON.stringify(myJson)));
 
-    Promise.all([sandwich, kittens]).then(()=> console.log('meatballs!'));
-
-export default class Recipe {
-  
-  constructor(properties) {
+    Promise.all([sandwich, kittens]).then(() => {/*console.log('meatballs!'));*/
+    console.log('omg puppies');
     this.properties = properties;
-    
+
     // Retrieve our keyword from the classification object
     const keyword = this.properties.type;
 
     let recs = [];
-    
+
     // Filtering an array of JSON objects
     this.data = RecipeData.recipes.filter((i) => {
       recs.push(i.name);
       return i.type === keyword;
     });
+  });
   }
-  
+
   retrieve(method) {
     console.log(method); // the brew method we clicked on
     console.log(this.data); // the array of recipes
 
-    fetch('http://localhost:1234/recipes.json', {credentials: "same-origin"})
-    .then((response) => response.json())
-    .then((response) => console.log(response))
+    fetch('http://localhost:1234/recipes.json', { credentials: "same-origin" })
+      .then((response) => response.json())
+      .then((response) => console.log(response))
     // .then((myJson) => console.log(JSON.stringify(myJson)));
 
-    let display = function(recipe){
+    let display = function (recipe) {
       /*
       1. add an 'image' class that creates and inits an
       object with some preset properties (size, etc.),
@@ -54,7 +50,7 @@ export default class Recipe {
       const img = new Image(recipe).renderImage();
       document.querySelector('.image').innerHTML = img;
       document.querySelector('title').innerHTML = recipe.name;
-      
+
       document.querySelector('#name').textContent = recipe.name;
       // let body = JSON.stringify(recipe.body);
       // console.log(body);
@@ -70,12 +66,12 @@ export default class Recipe {
       //Discuss security
       //Also, if mark is not init as an array, the first 
       // item is 'undefined' atop the <ol>. Why?
-      
+
     }
-    
+
     // Passed-in name from navigation text
     // should match the name="" property from the JSON file
-    
+
     // console.log(this.data[0].name + '==' + method);
     this.data.forEach((r) => {
       console.log(r.name);
@@ -83,18 +79,18 @@ export default class Recipe {
       (r.name == method) ? display(r) : console.log('nope');
     })
 
-    
+
     // Retrieve values from the recipe and write the values
     // into the main article tag inside of /assets/templates/main.html
-    
-    
+
+
   }
-  
+
   update(method) {
     console.log(method);
 
   }
-  
+
 }
 
 // export let recs;
