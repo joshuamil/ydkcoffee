@@ -1,0 +1,134 @@
+{
+    "types": [
+        {
+            "name": "pourover",
+            "manual": true,
+            "grind": [
+                "medium-fine", 
+                "table salt"
+            ],
+            "desc": "kerfee",
+            "examples": [
+                {
+                    "brand": "Hario",
+                    "model": "V60"
+                },
+                {
+                    "brand": "Kalita",
+                    "model": "Wave"
+                },
+                {
+                    "brand": "Chemex",
+                    "model": "Eight Cup"
+                }
+            ]
+        },
+        {
+            "name": "drip",
+            "manual": false,
+            "grind": [
+                "medium-fine", 
+                "table salt"
+            ],
+            "desc": "kerfee",
+            "examples": [
+                {
+                    "brand": "Bonavita",
+                    "model": "BV1900TS"
+                },
+                {
+                    "brand": "Technivorm",
+                    "model": " Moccamaster"
+                },
+                {
+                    "brand": "Mr. Coffee",
+                    "model": "CJX31"
+                }
+            ]
+        },
+        {
+            "name": "espresso",
+            "manual": true,
+            "grind": [
+                "fine", 
+                "powdery"
+            ],
+            "desc": "kerfee",
+            "examples": [
+                {
+                    "brand": "Breville",
+                    "model": "BES870XL Barista Express"
+                },
+                {
+                    "brand": "Gaggia",
+                    "model": "14101 Classic"
+                },
+                {
+                    "brand": "De'Longhi",
+                    "model": "EC155"
+                }
+            ]
+        },
+        {
+            "name": "cold brew",
+            "manual": true,
+            "grind": [
+                "extra coarse", 
+                "coarse"
+            ],
+            "desc": "kerfee",
+            "examples": [
+                {
+                    "brand": "Toddy",
+                    "model": null
+                },
+                {
+                    "brand": "OXO",
+                    "model": "Cold Brew Coffee Maker"
+                },
+                {
+                    "brand": "Coffee Gator",
+                    "model": "CJX31"
+                }
+            ]
+        },
+        {
+            "name": "stovetop",
+            "manual": true,
+            "grind": [
+                "extra coarse", 
+                "coarse"
+            ],
+            "desc": "kerfee",
+            "examples": [
+                {
+                    "brand": "Bialetti",
+                    "model": "Moka Pot"
+                },
+                {
+                    "brand": "Grosche",
+                    "model": "Moka Stovetop Espresso Maker"
+                }
+            ]
+        },
+        {
+            "name": "french press",
+            "manual": true,
+            "grind": [
+                "coarse",
+                "sea salt"
+            ],
+            "desc": "kerfee",
+            "examples": [
+                {
+                    "brand": "Bodom",
+                    "model": "Chambord"
+                },
+                {
+                    "brand": "Frieling",
+                    "model": "Double Wall Stainless Steel"
+                }
+            ]
+        }
+    ]
+}
