@@ -14,7 +14,7 @@ export default class Recipe {
       .then((response) => RecipeData = response);
     // .then((myJson) => console.log(JSON.stringify(myJson)));
 
-    let brewerz = fetch('http://localhost:1234/brewers.json', {credentials: 'same-origin'})
+    let brewerz = fetch('http://localhost:1234/types.json', {credentials: 'same-origin'})
       .then((response) => response.json())
       .then((response) => BrewerData = response);
 
