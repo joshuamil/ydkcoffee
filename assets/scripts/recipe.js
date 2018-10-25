@@ -2,19 +2,26 @@
 import Image from './image.js';
 
 let RecipeData;
+let BrewerData;
 
 export default class Recipe {
 
   constructor(properties) {
     let kittens = () => console.log('omg, kittens!');
 
-    let sandwich = fetch('http://localhost:1234/recipes.json', { credentials: "same-origin" })
+    let recipeGrabber = fetch('http://localhost:1234/recipes.json', { credentials: "same-origin" })
       .then((response) => response.json())
       .then((response) => RecipeData = response);
     // .then((myJson) => console.log(JSON.stringify(myJson)));
 
-    Promise.all([sandwich, kittens]).then(() => {/*console.log('meatballs!'));*/
-    console.log('omg puppies');
+    let brewerz = fetch('http://localhost:1234/brewers.json', {credentials: 'same-origin'})
+      .then((response) => response.json())
+      .then((response) => BrewerData = response);
+
+    Promise.all([recipeGrabber, brewerz]).then(() => {
+      console.log('both promises fired');
+      console.log(`${JSON.stringify(RecipeData)}`);
+      console.log(`${JSON.stringify(BrewerData)}`);
     this.properties = properties;
 
     // Retrieve our keyword from the classification object
