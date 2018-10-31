@@ -3,45 +3,61 @@ import Image from './image.js';
 
 let RecipeData;
 let BrewerData;
+let combinedData = [];
 
 export default class Recipe {
 
   constructor(properties) {
-    let kittens = () => console.log('omg, kittens!');
 
-    let recipeGrabber = fetch('http://localhost:1234/recipes.json', { credentials: "same-origin" })
+    this.properties = properties;
+
+     // Retrieve our keyword from the classification object
+     const keyword = this.properties.type;
+
+     let recs = [];
+
+    const recipeGrabber = fetch('http://localhost:1234/recipes.json', {
+        credentials: "same-origin"
+      })
       .then((response) => response.json())
       .then((response) => RecipeData = response);
-    // .then((myJson) => console.log(JSON.stringify(myJson)));
+    // .then(() => console.log(RecipeData.recipes));
+    //console.log is returning the recipes array. So why is it not being filtered?
 
-    let brewerz = fetch('http://localhost:1234/types.json', {credentials: 'same-origin'})
+    const brewerz = fetch('http://localhost:1234/types.json', {
+        credentials: 'same-origin'
+      })
       .then((response) => response.json())
       .then((response) => BrewerData = response);
 
     Promise.all([recipeGrabber, brewerz]).then(() => {
       console.log('both promises fired');
-      console.log(`${JSON.stringify(RecipeData)}`);
-      console.log(`${JSON.stringify(BrewerData)}`);
-    this.properties = properties;
+      // this.properties = properties;
 
-    // Retrieve our keyword from the classification object
-    const keyword = this.properties.type;
+      // // Retrieve our keyword from the classification object
+      // const keyword = this.properties.type;
 
-    let recs = [];
+      // let recs = [];
 
-    // Filtering an array of JSON objects
-    this.data = RecipeData.recipes.filter((i) => {
-      recs.push(i.name);
-      return i.type === keyword;
+      // Filtering an array of JSON objects
+      this.data = RecipeData.recipes.filter((i) => {
+        recs.push(i.name);
+        return i.type === keyword;
+      });
+    })
+    .then(()=> {
+      combinedData.push(RecipeData, BrewerData);
+      console.log(combinedData);
     });
-  });
   }
 
   retrieve(method) {
     console.log(method); // the brew method we clicked on
     console.log(this.data); // the array of recipes
 
-    fetch('http://localhost:1234/recipes.json', { credentials: "same-origin" })
+    fetch('http://localhost:1234/recipes.json', {
+        credentials: "same-origin"
+      })
       .then((response) => response.json())
       .then((response) => console.log(response))
     // .then((myJson) => console.log(JSON.stringify(myJson)));
@@ -83,7 +99,7 @@ export default class Recipe {
     this.data.forEach((r) => {
       console.log(r.name);
       // let checker = (r.name == method) ? console.log('true') : console.log('false');
-      (r.name == method) ? display(r) : console.log('nope');
+      (r.name == method) ? display(r): console.log('nope');
     })
 
 
