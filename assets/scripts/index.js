@@ -10,7 +10,7 @@ window.addEventListener('load', () => {
       "type": "coffee"
     });
 
-    console.log(recipe);
+    // console.log(recipe);
     
     // This is a second instance of the same Class
     const recipe2 = new Recipe({
