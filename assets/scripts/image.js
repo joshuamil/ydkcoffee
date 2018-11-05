@@ -26,9 +26,9 @@ export default class Image {
     let remus = /_/;
     // let splitText = altText.split(['/', '.']);
     let splitText = altText.split('/');
-    console.log(splitText);
+    // console.log(splitText);
     let chunk = splitText.filter(section => section.includes('.'));
-    console.log(chunk);
+    // console.log(chunk);
     chunk.shift();
     chunk = JSON.stringify(chunk);
     let str = chunk.replace(stripExt, '');
@@ -36,7 +36,7 @@ export default class Image {
     str = str.replace("_", ' ');
     // str = `${str[0].toUpperCase()}`;
     // str.shift();
-    console.log(str);
+    // console.log(str);
     // Need to use regex to remove any symbols
     // console.log(`image text: ${splitText.replace(regex,'')}`);
     return str;

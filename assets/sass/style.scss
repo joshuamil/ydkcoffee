@@ -1,38 +1,28 @@
 @import 'colors';
 @import 'fonts';
+@import 'header';
 @import 'nav';
 @import 'main';
 
 * {
-    background: $black;
+    // background: $black;
     font-family: $main-font;
-    color: $white;
+    color: $accent;
     margin: 0;
     padding: 0;
 }
 
-header {
-    text-align: center;
-    background: $comp2;
-
-    h1, h3 {
-        background: inherit;
-        color: $comp2tone;
-    }
+body {
+    background-image: url('../images/coffee.jpg');
+    background-size: contain;
 }
 
 main {
     display: flex;
     justify-content: flex-start;
     margin: 0;
-    background-image: url('../images/coffee.jpg');
-    background-size: contain;
     min-height: 500px;
     max-height: 800vh;
-
-    > * {
-        border: 1px solid white;
-    }
 }
 
 footer {

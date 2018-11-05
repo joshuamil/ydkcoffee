@@ -11,56 +11,43 @@ export default class Recipe {
 
     this.properties = properties;
 
-     // Retrieve our keyword from the classification object
-     const keyword = this.properties.type;
+    // Retrieve our keyword from the classification object
+    const keyword = this.properties.type;
 
-     let recs = [];
+    let recs = [];
 
     const recipeGrabber = fetch('http://localhost:1234/recipes.json', {
-        credentials: "same-origin"
-      })
+      credentials: "same-origin"
+    })
       .then((response) => response.json())
       .then((response) => RecipeData = response);
     // .then(() => console.log(RecipeData.recipes));
-    //console.log is returning the recipes array. So why is it not being filtered?
 
     const brewerz = fetch('http://localhost:1234/types.json', {
-        credentials: 'same-origin'
-      })
+      credentials: 'same-origin'
+    })
       .then((response) => response.json())
       .then((response) => BrewerData = response);
 
-    Promise.all([recipeGrabber, brewerz]).then(() => {
-      console.log('both promises fired');
-      // this.properties = properties;
+    Promise.all([recipeGrabber, brewerz])
+      .then((item) => {
+        // console.log(`Promise ${item} fired`);
 
-      // // Retrieve our keyword from the classification object
-      // const keyword = this.properties.type;
-
-      // let recs = [];
-
-      // Filtering an array of JSON objects
-      this.data = RecipeData.recipes.filter((i) => {
-        recs.push(i.name);
-        return i.type === keyword;
+        combinedData.push(item);
+        console.log(combinedData);
+      })
+      .then(() => {
+        // Filtering an array of JSON objects
+        this.data = RecipeData.recipes.filter((i) => {
+          recs.push(i.name);
+          return i.type === keyword;
+        })
       });
-    })
-    .then(()=> {
-      combinedData.push(RecipeData, BrewerData);
-      console.log(combinedData);
-    });
   }
 
   retrieve(method) {
     console.log(method); // the brew method we clicked on
     console.log(this.data); // the array of recipes
-
-    fetch('http://localhost:1234/recipes.json', {
-        credentials: "same-origin"
-      })
-      .then((response) => response.json())
-      .then((response) => console.log(response))
-    // .then((myJson) => console.log(JSON.stringify(myJson)));
 
     let display = function (recipe) {
       /*
@@ -99,7 +86,7 @@ export default class Recipe {
     this.data.forEach((r) => {
       console.log(r.name);
       // let checker = (r.name == method) ? console.log('true') : console.log('false');
-      (r.name == method) ? display(r): console.log('nope');
+      (r.name == method) ? display(r) : console.log('nope');
     })
 
 
