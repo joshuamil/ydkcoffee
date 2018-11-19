@@ -16,43 +16,41 @@ export default class Recipe {
 
     let recs = [];
 
-    const recipeGrabber = fetch('http://localhost:1234/recipes.json', {
-      credentials: "same-origin"
-    })
-      .then((response) => response.json())
-      .then((response) => RecipeData = response);
+    async function mergeData() {
+
+    const recipeGrabber = await fetch('http://localhost:1234/recipes.json');
+      RecipeData = await response.json();
+      console.log(RecipeData);
     // .then(() => console.log(RecipeData.recipes));
 
-    // async function brewerz() {
-    //   fetch('http://localhost:1234/types.json', {
-    //   credentials: 'same-origin'
-    // })
-    //   .then((response) => response.json())
-    //   .then((response) => BrewerData = response)
+    const brewerz = await fetch('http://localhost:1234/types.json');
+      BrewerData = await response.json();
+      console.log(BrewerData);
 
-    //   await recipeGrabber
-    // }
-
-    const brewerz = fetch('http://localhost:1234/types.json', {
-      credentials: 'same-origin'
-    })
-      .then((response) => response.json())
-      .then((response) => BrewerData = response);
-
-    Promise.all([recipeGrabber, brewerz])
-      .then((item) => {
-        // console.log(`Promise ${item} fired`);
-
-        combinedData.push(item);
-        console.log(combinedData);
-      })
-      .then(() => {
-        // Filtering an array of JSON objects
+      // Filtering an array of JSON objects
         this.data = RecipeData.recipes.filter((i) => {
           recs.push(i.name);
           return i.type === keyword;
-        })
-      });
+        });
+
+  }
+
+  mergeData();
+
+    // Promise.all([recipeGrabber, brewerz])
+    //   .then((item) => {
+    //     // console.log(`Promise ${item} fired`);
+
+    //     combinedData.push(item);
+    //     console.log(combinedData);
+    //   })
+    //   .then(() => {
+    //     // Filtering an array of JSON objects
+    //     this.data = RecipeData.recipes.filter((i) => {
+    //       recs.push(i.name);
+    //       return i.type === keyword;
+    //     })
+    //   });
   }
 
   retrieve(method) {
