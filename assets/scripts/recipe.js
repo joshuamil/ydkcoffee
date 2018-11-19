@@ -23,6 +23,16 @@ export default class Recipe {
       .then((response) => RecipeData = response);
     // .then(() => console.log(RecipeData.recipes));
 
+    // async function brewerz() {
+    //   fetch('http://localhost:1234/types.json', {
+    //   credentials: 'same-origin'
+    // })
+    //   .then((response) => response.json())
+    //   .then((response) => BrewerData = response)
+
+    //   await recipeGrabber
+    // }
+
     const brewerz = fetch('http://localhost:1234/types.json', {
       credentials: 'same-origin'
     })
