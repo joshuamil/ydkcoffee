@@ -1,9 +1,14 @@
 // import * as RecipeData from '../recipes/recipes.json';
 import Image from './image.js';
+import Things from './things.js';
 
 let RecipeData;
 let BrewerData;
 let combinedData = [];
+
+const thing = new Things();
+console.log(thing);
+thing.roo();
 
 export default class Recipe {
 
@@ -16,26 +21,26 @@ export default class Recipe {
 
     let recs = [];
 
-    async function mergeData() {
+    // async function mergeData() {
 
-    const recipeGrabber = await fetch('http://localhost:1234/recipes.json');
-      RecipeData = await response.json();
-      console.log(RecipeData);
-    // .then(() => console.log(RecipeData.recipes));
+    //   const recipeGrabber = await fetch('http://localhost:1234/recipes.json');
+    //   RecipeData = await response.json();
+    //   console.log(RecipeData);
+    //   // .then(() => console.log(RecipeData.recipes));
 
-    const brewerz = await fetch('http://localhost:1234/types.json');
-      BrewerData = await response.json();
-      console.log(BrewerData);
+    //   const brewerz = await fetch('http://localhost:1234/types.json');
+    //   BrewerData = await response.json();
+    //   console.log(BrewerData);
 
-      // Filtering an array of JSON objects
-        this.data = RecipeData.recipes.filter((i) => {
-          recs.push(i.name);
-          return i.type === keyword;
-        });
+    //   // Filtering an array of JSON objects
+    //   this.data = RecipeData.recipes.filter((i) => {
+    //     recs.push(i.name);
+    //     return i.type === keyword;
+    //   });
 
-  }
+    // }
 
-  mergeData();
+    // mergeData();
 
     // Promise.all([recipeGrabber, brewerz])
     //   .then((item) => {
@@ -51,6 +56,25 @@ export default class Recipe {
     //       return i.type === keyword;
     //     })
     //   });
+  }
+
+  async mergeData() {
+
+    const recipeGrabber = await fetch('http://localhost:1234/recipes.json');
+    RecipeData =  response.json();
+    console.log(RecipeData);
+    // .then(() => console.log(RecipeData.recipes));
+
+    const brewerz = await fetch('http://localhost:1234/types.json');
+    BrewerData = response.json();
+    console.log(BrewerData);
+
+    // Filtering an array of JSON objects
+    this.data = RecipeData.recipes.filter((i) => {
+      recs.push(i.name);
+      return i.type === keyword;
+    });
+
   }
 
   retrieve(method) {
